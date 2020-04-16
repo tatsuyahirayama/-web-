@@ -1,0 +1,364 @@
+html{
+  width: 100%;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  color:rgba(16,46,55,1);
+  line-height: 150%;
+  height: 100vh;
+  width: 100%;
+}
+
+h1,h2,h3,h4,h5,h6,p{
+  margin: 0;
+  padding: 0;
+}
+
+
+
+/* リンク */
+a,
+a:active,
+a:focus {
+  color:rgba(16,46,55,1);
+}
+a:hover {
+  text-decoration: none;
+}
+
+/* フォント */
+
+.num {
+  font-family: 'Montserrat', sans-serif;
+}
+
+#top-baner {
+  width: 100%;
+}
+
+/* ヘッダー */
+header {
+  margin-bottom: 30px;
+  width: 100%;
+  height: 80px;
+  background:rgba(43,187,216,1);
+}
+
+header h1 {
+  float: left;
+  margin: 0;
+  padding-left: 15px;
+  text-align: center;
+  font-size: 20px;
+  font-family: 'Montserrat', sans-serif;
+  line-height: 80px;
+}
+
+header h1 a {
+  color:rgba(16,46,55,1);
+  text-decoration: none;
+}
+
+/* ナビゲーション */
+#top-nav {
+  position: relative;
+  float: right;
+  width: 500px;
+  height: 90px;
+}
+
+nav a {
+  padding: 10px 15px;
+  color: rgba(16,46,55,1);
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 14px;
+}
+
+nav a:hover {
+  text-decoration: underline;
+}
+
+#top-nav ul {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  margin: 0;
+  width: 450px;
+  height: 80px;
+  list-style: none;
+  line-height: 80px;
+}
+
+#top-nav ul li {
+  float: right;
+}
+
+/* レイアウト */
+.flex{
+  display: flex;
+  width: 100%;
+  justify-content: space-around;
+}
+
+.flex div{
+  
+  width: 400px;
+}
+
+.site-width {
+  margin: 0 auto;
+  width: 980px;
+}
+
+#main {
+  min-height: 400px;
+  margin: 0 auto;
+}
+
+.page-1colum #main {
+  width: 100%;
+}
+
+.page-3colum #main {
+  width: 1200px;
+}
+
+.page-3colum .flex {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+.page-3colum article {
+  margin-top: 20px;
+}
+
+.page-3colum article h2 {
+  margin-bottom: 30px;
+  text-align: center;
+}
+
+.page-3colum article img {
+  height: 250px;
+  width: 350px;
+  object-fit: cover;
+  border-radius: 10px;  
+}
+
+.page-msg #main{
+  width: 900px;
+}
+
+.page-logined #main{
+  box-sizing: border-box;
+  border: 5px solid #f1f1f1;
+  width: 100%;
+}
+
+section h1.title {
+  text-align: center;
+  font-family: 'Montserrat', sans-serif;
+}
+
+#contents {
+  overflow: hidden;
+  margin: 20px auto;
+}
+
+/* ページタイトル */
+.page-title {
+  margin-bottom: 50px;
+  padding-top: 20px;
+  text-align: center;
+  font-size: 32px;
+}
+
+/* フッター */
+footer {
+  padding: 15px;
+  width: 100%;
+  background:rgba(16,46,55,1);
+  color: #f6f5f5;
+  text-align: center;
+  font-size: 12px;
+}
+
+footer a {
+  color: #f6f5f5;
+}
+/*contact*/
+
+#contact {
+  margin-bottom: 150px;
+}
+
+/* ボタン */
+.btn-container{
+  width: 100%;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.btn {
+  padding: 15px 20px;
+  text-decoration: none;
+  margin: 0 auto;
+}
+
+.btn:hover {
+  text-decoration: none;
+}
+
+.btn.btn-primary {
+  background: rgba(252,210,113,1);
+  color:rgba(16,46,55,1);
+}
+
+.btn.btn-mid {
+  width: 150px;
+  margin: 0 auto;
+}
+
+/* フォーム */
+label{
+  display: block;
+}
+label.err input, label.err select{
+  background: #f7dcd9;
+}
+input[type="text"], input[type="password"], input[type="number"], .form select,
+textarea {
+  display: block;
+  box-sizing: border-box;
+  margin-bottom: 15px;
+  padding: 10px;
+  width: 100%;
+  height: 60px;
+  border: none;
+  background: #f6f5f5;
+  font-size: 18px;
+  border-radius: 0.5rem;
+}
+input[type="submit"] {
+  margin: 15px 0;
+  padding: 15px 30px;
+  width: 100%;
+  border: none;
+  background:rgba(252,210,113,1);
+  color: rgba(16,46,55,1);
+  font-size: 16px;
+}
+
+select:hover,
+input[type="submit"]:hover {
+  cursor: pointer;
+}
+
+.form-container {
+  margin: 0 auto;
+}
+.page-1colum .form-container{
+  margin: 20px auto;
+}
+
+.page-login #main h2{
+  text-align: center;
+  margin: 60px 0 40px 0;
+}
+
+.page-signup #main h2{
+  text-align: center;
+  margin: 10px 0 40px 0;
+}
+.page-1colum .form{
+  margin: 0 auto;
+  padding: 30px;
+  width: 500px;
+  border: 3px solid #f1f1f1;
+  box-sizing: border-box;
+}
+
+.form {
+  margin: 0 auto;
+  padding: 30px;
+  width: 100%;
+  border: 3px solid #f1f1f1;
+  box-sizing: border-box;
+}
+.form .label-require{
+  margin-left: 5px;
+  background: #fe8a8b;
+  font-size: 14px;
+  padding: 3px 5px;
+  color: white;
+  vertical-align: bottom;
+}
+.page-logined .form{
+  border: none;
+}
+
+.form .title {
+  margin-bottom: 40px;
+  text-align: center;
+}
+.form .area-msg{
+  padding: 0 0 15px 0;
+  color: red;
+}
+
+.form .btn-container {
+  overflow: hidden;
+}
+
+.form .area-drop{
+  margin-bottom: 15px;
+  width: 100%;
+  height: 140px;
+  background: #f6f5f4;
+  color: #ccc;
+  text-align: center;
+  line-height: 150px;
+  position: relative;
+  box-sizing: border-box;
+}
+.form .input-file{
+  opacity:0;
+  width:100%;
+  height:140px;
+  position:absolute;
+  top:0;
+  left:0;
+  z-index: 2;
+}
+.form .prev-img{
+  width:300px;
+  height: 300px;
+  position:absolute;
+  top:0;
+  left:0;
+}
+.form .imgDrop-container{
+  width: 33.333%;
+  float: left;
+  padding-right: 15px;
+  box-sizing: border-box;
+}
+.form .counter-text{
+  text-align: right;
+}
+
+
+/* その他 */
+.msg-slide{
+  position: fixed;
+  top: 0;
+  width:100%;
+  height:40px;
+  background: rgba(227, 235, 159, 0.6);
+  text-align: center;
+  font-size:16px;
+  line-height: 40px;
+}
