@@ -50,10 +50,6 @@ define('MSG06','256文字以内で入力してください');
 define('MSG07','エラーが発生しました。しばらく経ってからやり直してください。');
 define('MSG08', 'そのEmailは既に登録されています');
 define('MSG09', 'メールアドレスまたはパスワードが違います');
-define('MSG10', '電話番号の形式が違います');
-define('MSG11', '郵便番号の形式が違います');
-define('MSG12', '古いパスワードが違います');
-define('MSG13', '古いパスワードと同じです');
 define('MSG14', '文字で入力してください');
 define('MSG15', '正しくありません');
 define('MSG16', '有効期限が切れています');
@@ -230,47 +226,6 @@ function getUser($u_id){
   }
 }
 
-function isLike($u_id, $p_id){
-  debug('お気に入り情報があるか確認します。');
-  debug('ユーザーID：'.$u_id);
-  debug('商品ID：'.$p_id);
-  try {
-    $dbh = dbConnect();
-    $sql = 'SELECT * FROM `like` WHERE product_id = :p_id AND user_id = :u_id';
-    $data = array(':u_id' => $u_id, ':p_id' => $p_id);
-    $stmt = queryPost($dbh, $sql, $data);
-
-    if($stmt->rowCount()){
-      debug('お気に入りです');
-      return true;
-    }else{
-      debug('特に気に入ってません');
-      return false;
-    }
-
-  } catch (Exception $e) {
-    error_log('エラー発生:' . $e->getMessage());
-  }
-}
-function getMyLike($u_id){
-  debug('自分のお気に入り情報を取得します。');
-  debug('ユーザーID：'.$u_id);
-  try {
-    $dbh = dbConnect();
-    $sql = 'SELECT * FROM `like` AS l LEFT JOIN product AS p ON l.product_id = p.id WHERE l.user_id = :u_id';
-    $data = array(':u_id' => $u_id);
-    $stmt = queryPost($dbh, $sql, $data);
-
-    if($stmt){
-      return $stmt->fetchAll();
-    }else{
-      return false;
-    }
-
-  } catch (Exception $e) {
-    error_log('エラー発生:' . $e->getMessage());
-  }
-}
 
 //================================
 // その他
