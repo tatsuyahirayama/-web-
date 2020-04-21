@@ -20,6 +20,18 @@ switch($message['board_id']){
     case 1:
         $board_name ='board_event';
     break;
+    case 2:
+        $board_name ='board_question';
+    break;
+    case 3:
+        $board_name ='board_japanesefood';
+    break;
+    case 4:
+        $board_name ='board_chineseLang';
+    break;
+    case 5:
+        $board_name ='board_holiday';
+    break;
 }
 
 if($message['user_id'] === $_SESSION['user_id']){

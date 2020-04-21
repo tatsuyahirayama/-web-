@@ -184,18 +184,8 @@ function isLogin(){
 //================================
 // データベース
 //================================
-function dbConnect(){
-  $dsn = 'mysql:dbname=portfolio;host=localhost;charset=utf8';
-  $user = 'root';
-  $password = 'root';
-  $options = array(
-    PDO::ATTR_ERRMODE => PDO::ERRMODE_WARNING,
-    PDO::ATTR_DEFAULT_FETCH_MODE => PDO::FETCH_ASSOC,
-    PDO::MYSQL_ATTR_USE_BUFFERED_QUERY => true,
-  );
-  $dbh = new PDO($dsn, $user, $password, $options);
-  return $dbh;
-}
+require('database.php');
+
 function queryPost($dbh, $sql, $data){
   $stmt = $dbh->prepare($sql);
   if(!$stmt->execute($data)){

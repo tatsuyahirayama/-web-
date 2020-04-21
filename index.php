@@ -48,19 +48,19 @@ require('head.php');
         </article>
         <article>
           <h2>質問部屋</h2>
-          <a href="msg.php"><img src="img/china04.jpg" alt=""></a>
+          <a href="board_question.php"><img src="img/china04.jpg" alt=""></a>
         </article>
         <article>
           <h2>お勧め日本料理店</h2>
-          <a href="msg.php"><img src="img/china03.jpg" alt=""></a>
+          <a href="board_japanesefood.php"><img src="img/china03.jpg" alt=""></a>
         </article>
         <article>
           <h2>中国語学習</h2>
-          <a href="msg.php"><img src="img/china05.jpg" alt=""></a>
+          <a href="board_chineseLang.php"><img src="img/china05.jpg" alt=""></a>
         </article>
         <article>
           <h2>休日の過ごし方</h2>
-          <a href="msg.php"><img src="img/china06.jpg" alt=""></a>
+          <a href="board_holiday.php"><img src="img/china06.jpg" alt=""></a>
         </article>
       
       </section>
