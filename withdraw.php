@@ -16,12 +16,8 @@ if(!empty($_POST)){
   try {
     $dbh = dbConnect();
     $sql1 = 'UPDATE users SET  delete_flg = 1 WHERE id = :us_id';
-    $sql2 = 'UPDATE product SET  delete_flg = 1 WHERE user_id = :us_id';
-    $sql3 = 'UPDATE like SET  delete_flg = 1 WHERE user_id = :us_id';
     $data = array(':us_id' => $_SESSION['user_id']);
     $stmt1 = queryPost($dbh, $sql1, $data);
-    $stmt2 = queryPost($dbh, $sql2, $data);
-    $stmt3 = queryPost($dbh, $sql3, $data);
 
     if($stmt1){
       session_destroy();
@@ -75,7 +71,7 @@ require('head.php');
             </div>
           </form>
         </div>
-        <a href="mypage.php">&lt; マイページに戻る</a>
+        <a href="index.php">&lt; HOMEに戻る</a>
       </section>
     </div>
 

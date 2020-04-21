@@ -35,7 +35,7 @@ require('head.php');
 
     <div id="contents">
       
-      <h1 class="page-title">深圳GUIDE(仮)</h1>
+      <h1 class="page-title">深センNAVI</h1>
 
       <section id="main" class="flex">
         <article>
@@ -51,7 +51,7 @@ require('head.php');
           <a href="board_question.php"><img src="img/china04.jpg" alt=""></a>
         </article>
         <article>
-          <h2>お勧め日本料理店</h2>
+          <h2>おすすめ日本料理店</h2>
           <a href="board_japanesefood.php"><img src="img/china03.jpg" alt=""></a>
         </article>
         <article>

@@ -217,6 +217,20 @@ footer a {
   color:rgba(16,46,55,1);
 }
 
+.withdraw{
+  box-sizing: border-box;
+  display: block;
+  width: 100px;
+  background-color: gray;
+  float: right;
+  margin-top: 2rem;
+  height: 50px;
+  text-align: center;
+  line-height: 50px;
+  text-decoration: none;
+}
+
+
 .btn.btn-mid {
   width: 150px;
   margin: 0 auto;

@@ -152,8 +152,9 @@ require('head.php');
     <div id="contents" class="site-width">
       <section>
         <div class="board-title">
-          <h1>イベント告知</h1>
-          <p>自己紹介をお願いします</p>
+          <h1>おすすめ日本料理店</h1>
+          <p>中国滞在が続くと日本料理が恋しくなるものです。</p>
+          <p>おすすめの日本料理店を共有し合いましょう！</p>
         </div>
       </section>
       <section id="main" >

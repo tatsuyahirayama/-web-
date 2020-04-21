@@ -1,5 +1,5 @@
 <footer id="footer">
-  Copyright <a href="">深圳GUIDE(仮)</a>. All Rights Reserved.
+  Copyright <a href="">深センNAVI</a>. All Rights Reserved.
 </footer>
 
 <script src="js/vendor/jquery-3.4.1.min.js"></script>

@@ -153,7 +153,7 @@ require('head.php');
       <section>
         <div class="board-title">
           <h1>イベント告知</h1>
-          <p>自己紹介をお願いします</p>
+          <p>イベントの告知はこちらからどうぞ！</p>
         </div>
       </section>
       <section id="main" >

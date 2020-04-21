@@ -129,6 +129,9 @@ require('head.php');
         </form>
       </div>
     </section>
+    <div> 
+    <a class="withdraw" href="withdraw.php">退会</a>
+    </div>
   </div>
 
   <?php

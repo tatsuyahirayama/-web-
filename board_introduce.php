@@ -156,7 +156,7 @@ require('head.php');
       <section>
         <div class="board-title">
           <h1>自己紹介</h1>
-          <p>自己紹介をお願いします</p>
+          <p>自己紹介をお願いします！</p>
         </div>
       </section>
       <section id="main" >

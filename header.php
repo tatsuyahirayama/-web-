@@ -1,6 +1,6 @@
 <header>
   <div class="site-width">
-    <h1><a href="index.php">深圳GUIDE(仮)</a></h1>
+    <h1><a href="index.php">深センNAVI</a></h1>
     <nav id="top-nav">
       <ul>
         <?php

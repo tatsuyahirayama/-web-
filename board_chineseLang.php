@@ -152,8 +152,8 @@ require('head.php');
     <div id="contents" class="site-width">
       <section>
         <div class="board-title">
-          <h1>イベント告知</h1>
-          <p>自己紹介をお願いします</p>
+          <h1>中国語学習</h1>
+          <p>勉強法やおすすめの教材など共有し合いましょう！</p>
         </div>
       </section>
       <section id="main" >
