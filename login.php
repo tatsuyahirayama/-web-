@@ -91,7 +91,8 @@ require('head.php');
        <div class="form-container">
         
          <form action="" method="post" class="form">
-
+           <p>ゲスト用メールアドレス：guest@mail.com</p>
+           <p>パスワード：guestpass</p>
            <div class="area-msg">
              <?php 
               if(!empty($err_msg['common'])) echo $err_msg['common'];
